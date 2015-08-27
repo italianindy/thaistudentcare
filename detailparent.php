@@ -40,7 +40,7 @@ $objResult = mysql_fetch_array($objQuery);
 	
     <div data-role="header" data-theme="e">
     <a href="http://112.121.150.67/thaistudentcare/mainparent.php" data-icon="back" data-iconpos="notext" data-direction="reverse" >Back</a>
-		<h1><font size="5" >ผู้ปกครอง : คุณ<? echo $objResult["parent_fname"];?> <? echo $objResult["parent_lname"];?></font></h1>
+		<h1><font size="3" >ผู้ปกครอง : คุณ<? echo $objResult["parent_fname"];?> <? echo $objResult["parent_lname"];?></font></h1>
 	</div>
 	<div data-role="content">	
 		<div style="padding-left:10px;padding-right:10px">
@@ -64,11 +64,11 @@ $objResult = mysql_fetch_array($objQuery);
     
 	<div data-role="fieldcontain">
 		<label for="name">วันที่และเวลาเข้าเรียนล่าสุด :</label>
-			<? echo $objResult["stc_in"]($dateData);?>
+			<? echo $objResult["stc_in"];?>
 	</div>
 	<div data-role="fieldcontain">
 		<label for="name">วันที่และเวลากลับล่าสุด :</label>
-			<? echo $objResult["stc_out"]($dateData);?>
+			<? echo $objResult["stc_out"];?>
 	</div>
         <font size="4" color="#990000"><a href="http://112.121.150.67/thaistudentcare/mainparent.php" data-icon="star" data-role="button" data-theme="e">ดูอย่างละเอียด</a></font>
 				
