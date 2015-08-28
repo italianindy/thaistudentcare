@@ -33,7 +33,7 @@ $objResult = mysql_fetch_array($objQuery);
 <div data-role="page" data-theme="d" id="pageMparent">
 	<div data-role="header" data-theme="e">
     <a href="http://112.121.150.67/thaistudentcare/logout.php" data-icon="home" data-iconpos="notext" data-direction="reverse" >Back</a>
-		<h1><font size="3" >ผู้ปกครอง : คุณ<? echo $objResult["parent_fname"];?> <? echo $objResult["parent_lname"];?></font></h1>
+		<h1><font size="2" >ผู้ปกครอง : คุณ<? echo $objResult["parent_fname"];?> <? echo $objResult["parent_lname"];?></font></h1>
 	</div>
 <?
 $strSQL2 = "SELECT
@@ -60,6 +60,14 @@ while($objResult2 = mysql_fetch_array($objQuery2)) {
 ?> 
 </ul>
 	</div>
+    <div data-role="footer" data-theme="e" data-position="fixed">
+		<div data-role="navbar">
+          <ul>
+            <li><a href="http://112.121.150.67/thaistudentcare/logout.php"><font size="4">ออกจากระบบ</font></a></li>
+           
+          </ul>
+        </div>
+  </div>
 </div>
 
 </body>

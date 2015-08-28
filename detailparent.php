@@ -40,7 +40,7 @@ $objResult = mysql_fetch_array($objQuery);
 	
     <div data-role="header" data-theme="e">
     <a href="http://112.121.150.67/thaistudentcare/mainparent.php" data-icon="back" data-iconpos="notext" data-direction="reverse" >Back</a>
-		<h1><font size="3" >ผู้ปกครอง : คุณ<? echo $objResult["parent_fname"];?> <? echo $objResult["parent_lname"];?></font></h1>
+		<h1><font size="2" >ผู้ปกครอง : คุณ<? echo $objResult["parent_fname"];?> <? echo $objResult["parent_lname"];?></font></h1>
 	</div>
 	<div data-role="content">	
 		<div style="padding-left:10px;padding-right:10px">
