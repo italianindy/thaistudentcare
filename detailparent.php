@@ -21,7 +21,7 @@ exit();
 <?
 $objConnect = mysql_connect("112.121.150.67","hdc","hdc") or die(mysql_error());
 
-$objDB = mysql_select_db("db_student");
+$objDB = mysql_select_db("student_db_urrw");
 mysql_query("SET NAMES utf8", $objConnect);
 
 $strSQL = " SELECT
@@ -70,7 +70,7 @@ $objResult = mysql_fetch_array($objQuery);
 		<label for="name">วันที่และเวลากลับล่าสุด :</label>
 			<? echo $objResult["stc_out"];?>
 	</div>
-        <font size="4" color="#990000"><a href="http://112.121.150.67/thaistudentcare/mainparent.php" data-icon="star" data-role="button" data-theme="e">ดูอย่างละเอียด</a></font>
+        <font size="4" color="#990000"><a href="http://112.121.150.67/thaistudentcare/menuterm.php?sid=<?=$objResult["stud_id"];?>" data-icon="star" data-role="button" data-theme="e">ผลการเรียน</a></font>
 				
 
 

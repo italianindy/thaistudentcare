@@ -15,7 +15,7 @@ session_start();
 <?
 $objConnect = mysql_connect("112.121.150.67","hdc","hdc") or die(mysql_error());
 
-$objDB = mysql_select_db("db_student");
+$objDB = mysql_select_db("student_db_urrw");
 mysql_query("SET NAMES utf8", $objConnect);
 
 $strSQL = " SELECT * FROM parent  WHERE parent_username = '".$_POST["txtUsername"]."' AND parent_password = '".$_POST["txtPassword"]."' "; 

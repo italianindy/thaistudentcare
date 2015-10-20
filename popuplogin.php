@@ -12,7 +12,7 @@
 
 <div data-role="page" id="pagePopup">
 	<div data-role="header" data-theme="e">
-		<h1><font size="4">กรุณาล็อกอินเพื่อเข้าสู่ระบบ</font></h1>
+		<h1><font size="4">กรุณาล็อกอิน</font></h1>
 	</div>
 	<div data-role="content">
     <div align="center">
